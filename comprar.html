@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comprar Tema - BeatsZone Music Store</title>
+  <meta name="description" content="Compra beats y música fácilmente a través de PayPal o contacta directamente por WhatsApp, correo o Instagram." />
+  <meta name="google-site-verification" content="isgqW8r0B2w66Z9MniLnZd8omzt0wC5kKHteu3QumqE" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+    .option {
+      margin: 25px 0;
+    }
+    .contact-link, .buy-button {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 12px 25px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-link:hover, .buy-button:hover {
+      background-color: #0056b3;
+    }
+    form input[type="submit"] {
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Comprar o Contactar</h1>
+    <p>Gracias por tu interés en adquirir uno de nuestros temas.</p>
+
+    <div class="option">
+      <h2>Opción 1: Comprar directamente</h2>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="beatzonem.b.m.1@gmail.com" />
+        <input type="hidden" name="item_name" value="Beat musical" />
+        <input type="hidden" name="amount" value="2.99" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="return" value="https://beatzone1.github.io/BeatsMusicStore/gracias.html" />
+        <input type="hidden" name="cancel_return" value="https://beatzone1.github.io/BeatsMusicStore/cancelado.html" />
+        <input class="buy-button" type="submit" value="Pagar con PayPal" />
+      </form>
+    </div>
+
+    <div class="option">
+      <h2>Opción 2: Contactarme directamente</h2>
+      <a class="contact-link" href="https://wa.me/34633930556" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a class="contact-link" href="mailto:beatzonem.b.m.1@gmail.com" target="_blank" rel="noopener noreferrer">Correo</a>
+      <a class="contact-link" href="https://instagram.com/beatzonem.b.m" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
